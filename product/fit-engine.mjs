@@ -9,6 +9,8 @@ const rules={
  '1password-oss':[['team_account','is',true],['core_contributor','is',true],['project_age_days','min',30],['permissive_license','is',true]],
  'netlify-oss':[['noncommercial','is',true],['code_of_conduct','is',true],['license_osi_or_cc','is',true]],
 };
+const labels={company_age_months:'Company age in months',working_mvp:'Working product or MVP',seeking_vc:'Planning venture funding soon',previous_google_credits_beyond_trial:'Previous Google credits beyond free trial',public_repo:'Public repository',osi_license:'OSI-approved license',github_stars:'Repository stars',commercial_product:'Part of a commercial product',agency:'Agency or development shop',previous_mongodb_award:'Previous MongoDB startup award',company_website:'Active company website',funding_usd:'Funding raised in USD',series_d_or_later:'Series D or later',company_domain_email:'Email on the company domain',incorporated:'Company incorporated',team_account:'1Password team account',core_contributor:'Core project contributor',project_age_days:'Project age in days',permissive_license:'Permissive open source license',noncommercial:'Non-commercial project',code_of_conduct:'Repository Code of Conduct',license_osi_or_cc:'OSI or Creative Commons license'};
+export function questionsFor(program){return(rules[program.id]??[]).map(([key,op])=>({key,label:labels[key]??key,type:op==='is'?'boolean':'number'}));}
 export function assessFit(program,profile={}){
  if(program.source!=='official'||!program.verification)return{status:'not_listed',reasons:['Missing reviewed official evidence'],missing:[]};
  if(program.status!=='open')return{status:'closed',reasons:['Provider is not accepting applications'],missing:[]};
