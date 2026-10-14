@@ -1,0 +1,15 @@
+import {test} from 'node:test'; import assert from 'node:assert/strict';
+import {validateCatalog} from './catalog-policy.mjs';
+import {assessFit} from '../product/fit-engine.mjs';
+const p=()=>({id:'gcp-startups',source:'official',status:'open',url:'https://cloud.google.com/startup/pre-funded',last_checked:'2026-10-15',source_quote:'working MVP',value_label:'Start tier credits',value_usd:null,requirements:['Working MVP'],verification:{reviewed_by:'Reviewer',source_sha256:'a'.repeat(64),official_url:'https://cloud.google.com/startup/pre-funded',checked_at:'2026-10-15'}});
+test('legacy official tag alone does not authorize publication',()=>{const x=p();delete x.verification;assert.ok(validateCatalog({programs:[x]},'2026-10-15').length);});
+test('reported entries cannot publish',()=>{const x=p();x.source='reported';assert.ok(validateCatalog({programs:[x]},'2026-10-15').length);});
+test('future verification dates cannot publish',()=>{const x=p();x.last_checked='2026-11-01';assert.ok(validateCatalog({programs:[x]},'2026-10-15').length);});
+test('unsupported numeric values cannot publish',()=>{const x=p();x.value_usd=25000;assert.ok(validateCatalog({programs:[x]},'2026-10-15').length);});
+test('missing profile facts are not treated as eligibility',()=>{assert.equal(assessFit(p(),{}).status,'needs_review');assert.equal(assessFit(p(),{}).missing.length,4);});
+test('specific age limit overrides old broad startup age bucket',()=>{assert.equal(assessFit(p(),{company_age_months:36}).status,'criteria_not_met');});
+test('passing known facts never guarantees award',()=>{assert.equal(assessFit(p(),{company_age_months:12,working_mvp:true,seeking_vc:true,previous_google_credits_beyond_trial:false}).status,'needs_review');});
+test('a real zero is preserved',()=>{assert.ok(!assessFit(p(),{company_age_months:0}).missing.includes('company_age_months'));});
+test('malformed numeric profile is not coerced to eligibility',()=>{assert.ok(assessFit(p(),{company_age_months:'12'}).missing.includes('company_age_months'));});
+test('closed programs do not match applicants',()=>{const x=p();x.status='closed';assert.equal(assessFit(x,{}).status,'closed');});
+test('a lookalike provider domain cannot publish',()=>{const x=p();x.url='https://cloud.google.com.evil.invalid/program';x.verification.official_url=x.url;assert.ok(validateCatalog({programs:[x]},'2026-10-15').length);});

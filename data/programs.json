@@ -1,86 +1,1854 @@
 {
-  "updated": "2026-09-19",
+  "updated": "2026-10-15",
+  "publication_policy": "Only reviewed claims supported by current official sources. Source archives and exclusions remain private.",
+  "amount_policy": "Unsupported dollar valuations removed. Benefits are not summed as guaranteed awards.",
   "programs": [
-    {"id":"anthropic-oss","company":"Anthropic","name":"Claude for Open Source","track":"oss","category":"AI & ML","value_usd":1200,"value_label":"6 months Claude Max 20x (~$1,200)","url":"https://claude.com/contact-sales/claude-for-oss","difficulty":"moderate","referral_required":false,"recurring":false,"status":"open","requirements":["500+ dependent repos, OR 100+ dependent packages, OR 200k+ monthly downloads","OR listed maintainer on a recognised foundation project (CNCF, Apache PMC, Node TSC, etc.)","OR 100+ PRs merged into repos you do not own in last 12 months","OR 20+ unique external contributors in last 12 months","OR OpenSSF criticality score >= 0.4"],"notes":"Rolling review, up to 10,000 maintainers accepted.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"vercel-oss","company":"Vercel","name":"Vercel Open Source Program","track":"oss","category":"Hosting","value_usd":3600,"value_label":"~$3,600/yr credits + third-party starter pack","url":"https://vercel.com/open-source-program","difficulty":"hard","referral_required":false,"recurring":true,"status":"open","requirements":["Actively developed and maintained OSS project","Quarterly cohorts (spring/summer/fall/winter)"],"notes":"3-year term, then you graduate out.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"neon-oss","company":"Neon","name":"Neon Open Source Program","track":"oss","category":"Database","value_usd":5000,"value_label":"Up to $5,000/yr credits + GitHub Sponsors cash","url":"https://neon.com/programs/open-source","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","requirements":["OSI-recognised licence","Uses Postgres as a core component","Docs or examples showing Neon integration"],"notes":"Renewable yearly. Projects that make Neon a default option are prioritised.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"openai-codex-oss","company":"OpenAI","name":"Codex for Open Source","track":"oss","category":"AI & ML","value_usd":25000,"value_label":"6 mo ChatGPT Pro + API credits, grants up to $25,000","url":"https://openai.com/form/codex-for-oss/","difficulty":"hard","referral_required":false,"recurring":false,"status":"open","requirements":["Established open source project"],"notes":"Part of a $1M open source fund.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"cloudflare-alexandria","company":"Cloudflare","name":"Project Alexandria","track":"oss","category":"Infrastructure","value_usd":null,"value_label":"Annual recurring credits (Workers, R2, Pages, Zero Trust)","url":"https://www.cloudflare.com/en-gb/lp/project-alexandria/","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project using Cloudflare services"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"digitalocean-oss","company":"DigitalOcean","name":"Credits for Projects","track":"oss","category":"Infrastructure","value_usd":20000,"value_label":"$60-$20,000/yr, tiered by GitHub stars","url":"https://digitalocean.com/open-source/credits-for-projects","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public GitHub repo","Credit tier scales with star count"],"notes":"One of the few programmes with a genuinely low entry bar.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"github-copilot-maintainer","company":"GitHub","name":"Copilot Pro for Maintainers","track":"oss","category":"AI & ML","value_usd":120,"value_label":"Free Copilot Pro (~$120/yr)","url":"https://docs.github.com/en/copilot","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Recognised maintainer of a popular OSS repo"],"notes":"Also free for verified students and teachers.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"jetbrains-oss","company":"JetBrains","name":"Open Source Licences","track":"oss","category":"Dev Tools","value_usd":779,"value_label":"Free All Products Pack (~$779/yr)","url":"https://www.jetbrains.com/community/opensource/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Non-commercial OSS project, 3+ months old","Core team members only"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"gitlab-oss","company":"GitLab","name":"GitLab for Open Source","track":"oss","category":"CI/CD","value_usd":null,"value_label":"Free Ultimate tier + 50,000 CI minutes","url":"https://about.gitlab.com/solutions/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["OSI-approved licence","Not seeking profit"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"mintlify-oss","company":"Mintlify","name":"Mintlify OSS Program","track":"oss","category":"Dev Tools","value_usd":3600,"value_label":"Free Pro plan (~$300/mo value)","url":"https://www.mintlify.com/oss-program","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project needing docs"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"snyk-oss","company":"Snyk","name":"Snyk for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Full Enterprise licence, unlimited usage","url":"https://snyk.io/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"1password-oss","company":"1Password","name":"1Password for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Free Teams account","url":"https://github.com/1Password/for-open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["OSI-approved licence","Project at least 30 days old"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"algolia-oss","company":"Algolia","name":"Algolia for Open Source","track":"oss","category":"Dev Tools","value_usd":null,"value_label":"200k records, 200k searches/mo free","url":"https://www.algolia.com/for-open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"DocSearch is the most common use.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"atlassian-oss","company":"Atlassian","name":"Open Source Licences","track":"oss","category":"Dev Tools","value_usd":null,"value_label":"Free Jira, Confluence, Trello, Bitbucket (Standard)","url":"https://www.atlassian.com/software/views/open-source-license-request","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","requirements":["OSI-approved licence","Publicly available source, no paid support tier"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"browserstack-oss","company":"BrowserStack","name":"Open Source Program","track":"oss","category":"Testing","value_usd":null,"value_label":"Lifetime full platform access","url":"https://www.browserstack.com/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repo, OSI licence"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"sentry-oss","company":"Sentry","name":"Sentry for Open Source","track":"oss","category":"Monitoring","value_usd":null,"value_label":"Free error tracking + performance","url":"https://sentry.io/for/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"datadog-oss","company":"Datadog","name":"Datadog for Open Source","track":"oss","category":"Monitoring","value_usd":null,"value_label":"Free observability accounts","url":"https://www.datadoghq.com/partner/open-source/","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"netlify-oss","company":"Netlify","name":"Netlify Open Source Plan","track":"oss","category":"Hosting","value_usd":null,"value_label":"Dedicated OSS plan with credits","url":"https://www.netlify.com/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"circleci-oss","company":"CircleCI","name":"CircleCI for Open Source","track":"oss","category":"CI/CD","value_usd":null,"value_label":"Free build credits: Linux, Arm, macOS, Windows","url":"https://circleci.com/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"semaphore-oss","company":"Semaphore","name":"Semaphore for Open Source","track":"oss","category":"CI/CD","value_usd":null,"value_label":"Unlimited CI/CD minutes, 4 Linux + 1 macOS parallel","url":"https://semaphore.io/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"blacksmith-oss","company":"Blacksmith","name":"Blacksmith for OSS","track":"oss","category":"CI/CD","value_usd":null,"value_label":"Free high-performance GitHub Actions runners","url":"https://www.blacksmith.sh/pricing#oss","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"coderabbit-oss","company":"CodeRabbit","name":"CodeRabbit for OSS","track":"oss","category":"AI & ML","value_usd":null,"value_label":"Free AI code reviews on public repos","url":"https://www.coderabbit.ai/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"Backed by a $1M OSS sponsorship commitment.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"greptile-oss","company":"Greptile","name":"Greptile for Open Source","track":"oss","category":"AI & ML","value_usd":null,"value_label":"Free AI code review","url":"https://www.greptile.com/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["MIT, Apache or GPL licence"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"openpanel-oss","company":"OpenPanel","name":"OpenPanel for Open Source","track":"oss","category":"Analytics","value_usd":null,"value_label":"Up to 2.5M events/mo, unlimited team","url":"https://openpanel.dev/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"upstash-oss","company":"Upstash","name":"Upstash Open Source Program","track":"oss","category":"Database","value_usd":null,"value_label":"Monthly credit grants + co-marketing","url":"https://upstash.com/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"convex-oss","company":"Convex","name":"Convex Open Source Program","track":"oss","category":"Database","value_usd":null,"value_label":"Free Pro credits + swag","url":"https://www.convex.dev/open-source-program","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"sanity-oss","company":"Sanity","name":"Sanity Open Source Plan","track":"oss","category":"Dev Tools","value_usd":null,"value_label":"Free Growth plan (3 datasets, 25 users)","url":"https://www.sanity.io/docs/open-source-plan","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"gitbook-oss","company":"GitBook","name":"Non-profit / Open Source Plan","track":"oss","category":"Dev Tools","value_usd":null,"value_label":"Free Community plan with Ultimate features","url":"https://docs.gitbook.com/account-management/plans","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source or non-profit"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"crowdin-oss","company":"Crowdin","name":"Crowdin for Open Source","track":"oss","category":"Dev Tools","value_usd":null,"value_label":"Free localisation platform","url":"https://crowdin.com/page/open-source-project-setup-request","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["OSI-approved licence"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"stainless-oss","company":"Stainless","name":"Stainless for OSS","track":"oss","category":"Dev Tools","value_usd":948,"value_label":"Free Starter plan (~$79/mo value)","url":"https://stainless.com/pricing","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source SDK / API project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"zulip-oss","company":"Zulip","name":"Zulip for Open Source","track":"oss","category":"Communication","value_usd":null,"value_label":"Free Zulip Cloud Standard","url":"https://zulip.com/for/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source community"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"codecov-oss","company":"Codecov","name":"Codecov for Open Source","track":"oss","category":"Testing","value_usd":null,"value_label":"Free forever, unlimited public repos","url":"https://about.codecov.io/for/open-source/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"coveralls-oss","company":"Coveralls","name":"Coveralls for Open Source","track":"oss","category":"Testing","value_usd":null,"value_label":"Free forever coverage tracking","url":"https://coveralls.io/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"chromatic-oss","company":"Chromatic","name":"Chromatic for Open Source","track":"oss","category":"Testing","value_usd":null,"value_label":"35,000 Chrome snapshots/mo free","url":"https://chromatic.com/docs/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"argos-oss","company":"Argos","name":"Argos for Open Source","track":"oss","category":"Testing","value_usd":null,"value_label":"Free visual regression testing","url":"https://argos-ci.com/docs/open-source","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repo","README badge required"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"sonarqube-oss","company":"SonarSource","name":"SonarQube Cloud for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Free static analysis, unlimited members","url":"https://www.sonarsource.com/open-source-editions/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"Free for all open source projects, plus a free tier for private projects up to 50k lines. Their old application URL 404ed on 2026-09-19 and was corrected to the current page.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"deepsource-oss","company":"DeepSource","name":"DeepSource for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Free SAST, static analysis, coverage","url":"https://deepsource.com/pricing","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"codacy-oss","company":"Codacy","name":"Codacy for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Free Team plan forever","url":"https://www.codacy.com/pricing","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"codeclimate-oss","company":"Code Climate","name":"Quality for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Free forever quality + coverage","url":"https://codeclimate.com/quality/pricing","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"socket-oss","company":"Socket","name":"Socket for Open Source","track":"oss","category":"Security","value_usd":null,"value_label":"Free Team plan (supply chain protection)","url":"https://socket.dev/","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"signpath-oss","company":"SignPath","name":"SignPath Foundation","track":"oss","category":"Security","value_usd":null,"value_label":"Free code signing certificate","url":"https://signpath.io/solutions/open-source-community","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","requirements":["Established OSS project","Reproducible build process"],"notes":"Genuinely valuable - commercial certs cost hundreds per year.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"docker-dsos","company":"Docker","name":"Docker-Sponsored Open Source (DSOS)","track":"oss","category":"Infrastructure","value_usd":null,"value_label":"Verified badge, Scout, no pull rate limits","url":"https://docs.docker.com/docker-hub/repos/manage/trusted-content/dsos-program/","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","requirements":["Public, non-commercial OSS image","Meets Docker OSS criteria"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"microsoft-foss-fund","company":"Microsoft","name":"FOSS Fund","track":"oss","category":"Funding","value_usd":null,"value_label":"Direct cash sponsorship via engineer nominations","url":"https://github.com/microsoft/foss-fund","difficulty":"hard","referral_required":true,"recurring":false,"status":"open","requirements":["Must be nominated by a Microsoft engineer","Project must accept funds (GitHub Sponsors / Open Collective)"],"notes":"Cash, not credits.","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"tembo-oss","company":"Tembo","name":"Tembo for Open Source","track":"oss","category":"Database","value_usd":null,"value_label":"Free platform access","url":"https://www.tembo.io/oss","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["OSI-approved licence"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"webclaw-oss","company":"Webclaw","name":"Webclaw for OSS","track":"oss","category":"Dev Tools","value_usd":null,"value_label":"100,000 free scraping credits/mo","url":"https://webclaw.io/oss","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Open source project"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-    {"id":"sourcery-oss","company":"Sourcery","name":"Sourcery for Open Source","track":"oss","category":"AI & ML","value_usd":null,"value_label":"Free Pro-tier AI code review","url":"https://sourcery.ai/pricing","difficulty":"easy","referral_required":false,"recurring":true,"status":"open","requirements":["Public repository"],"notes":"","country":"GLOBAL","source":"community","last_checked":"2026-09-19"},
-
-    {"id":"cloudflare-startups","company":"Cloudflare","name":"Cloudflare for Startups","track":"startup","category":"Cloud","value_usd":350000,"entry_usd":10000,"value_label":"$10k bootstrapped / $100k / $350k max","url":"https://www.cloudflare.com/forstartups/","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","requirements":["Founded within the last 10 years","Actively developing a technology product","Public website plus an active LinkedIn, X or GitHub presence","First-time applicants only, for-profit, business email on your own domain"],"notes":"The best-documented programme on this list. Tier 3 is explicitly for bootstrapped or self-funded startups with under $1M raised and needs no partner at all - you can apply directly for $10,000. Tiers 1 and 2 require funding from an affiliated partner within the last 12 months.","last_checked":"2026-09-19"},
-    {"id":"gcp-startups","company":"Google Cloud","name":"Google for Startups Cloud Program","track":"startup","category":"Cloud","value_usd":350000,"entry_usd":2000,"value_label":"$2,000 no investor / $200,000 Scale / $350,000 AI","url":"https://startup.google.com/cloud/","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":null,"source_quote":"up to $2,000 USD in credits to use over a year","requirements":["Start tier: explicitly for startups not yet backed by equity funding - up to $2,000","Scale tier: requires startup equity funding - up to $100,000 in year one plus up to $100,000 in year two","AI startups: up to $350,000 in cloud cost coverage","Founded within 5 years of applying, or 10 years for Scale","Google Cloud account with a Billing ID, a public company website, and email on that same domain"],"notes":"Corrected 2026-09-19: an earlier check of cloud.google.com/startup hit a login wall, so this was marked unverified. The public page at startup.google.com/cloud publishes everything. The important find is the Start tier - $2,000 for founders with no investor at all, which almost no directory lists. No VC referral is required to apply.","last_checked":"2026-09-19"},
-    {"id":"aws-activate","company":"AWS","name":"AWS Activate","track":"startup","category":"Cloud","value_usd":200000,"entry_usd":5000,"value_label":"Up to $5,000 self-serve / up to $200,000 with a partner","url":"https://aws.amazon.com/startups/credits","difficulty":"moderate","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":"AWS Activate Provider Org ID - obtained by joining a partner accelerator, incubator, VC or angel network","source_quote":"Activate Portfolio tier offers up to $200,000 in AWS Activate Credits","requirements":["Pre-Series B, founded in the last 10 years","AWS account on a paid support plan","Founders tier: self-serve, starts at $1,000 and goes up to $5,000","Portfolio tier: needs an Activate Provider Org ID from a VC, accelerator or angel"],"notes":"Corrected 2026-09-19: the Portfolio ceiling is $200,000, not the $100,000 most directories quote, and the self-serve Founders tier goes to $5,000 rather than $1,000. A third invite-only AI tier sits above $200,000. AWS does not state how long credits stay valid.","last_checked":"2026-09-19"},
-    {"id":"neon-startups","company":"Neon","name":"Neon for Startups","track":"startup","category":"Database","value_usd":200000,"entry_usd":1000,"value_label":"Up to $1,000 self-funded / up to $200,000 combined with Databricks","url":"https://neon.com/startups","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","requirements":["Self-funded track: under $1M raised, early product or MVP, no investor needed","VC track: $1M+ raised, or a place in a recognised accelerator such as Y Combinator"],"notes":"Now a joint programme with Databricks - the $200,000 is combined across both. Credits last 12 months, and nothing is charged automatically when they run out.","last_checked":"2026-09-19"},
-    {"id":"databricks-startups","company":"Databricks","name":"Databricks Startup Program","track":"startup","category":"Data","value_usd":200000,"value_label":"Up to $200,000 combined Databricks + Neon","url":"https://www.databricks.com/product/startups","difficulty":"hard","referral_required":true,"recurring":false,"status":"open","country":"GLOBAL","source":"reported","requirements":["Venture-backed - VC funding is required","Building a data-driven application","A clear use case and early momentum from design partners"],"notes":"Corrected 2026-09-19: relaunched as a joint programme with Neon at $200,000 combined, up from the $50,000 older directories still list. The application URL also moved.","last_checked":"2026-09-19"},
-    {"id":"microsoft-founders-hub","company":"Microsoft","name":"Microsoft for Startups","track":"startup","category":"Cloud","value_usd":150000,"value_label":"Up to $150,000 Azure credits, unlocked over time","url":"https://startups.microsoft.com","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":"Microsoft for Startups Investor Network referral code - unlocks higher benefits earlier","source_quote":"Unlock up to $150K in Startup credits over time as your startup demonstrates verified progress, service adoption, and sustained Azure usage","requirements":["Privately held, for-profit, and owns a software product or service","Headquartered in a country where Azure is available","Has not raised Series C or later","Has not received more than $350,000 in lifetime free Azure credits","NOT eligible: consultancies, agencies, educational institutions, government bodies or crypto mining"],"notes":"Corrected 2026-09-19 from Microsoft's own docs. Two things matter here. First, the $150,000 is unlocked gradually as you actually use Azure, not granted up front - credits start small. Second, agencies and consultancies are explicitly barred, which disqualifies a large number of people who assume they qualify. Applications are reviewed in about three business days. Azure credits also pay for OpenAI models through Microsoft Foundry.","last_checked":"2026-09-19"},
-    {"id":"posthog-startups","company":"PostHog","name":"PostHog for Startups","track":"startup","category":"Analytics","value_usd":50000,"value_label":"$50,000 credits for 12 months + $12,000 partner benefits","url":"https://posthog.com/startups","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","requirements":["Early-stage startup","PostHog does not state an age or funding cap on the programme page"],"notes":"One of the very few programmes that prints its actual number in public. Includes analytics, session replay, feature flags and error tracking.","last_checked":"2026-09-19"},
-    {"id":"anthropic-startups","company":"Anthropic","name":"Claude for Startups","track":"startup","category":"AI & ML","value_usd":null,"value_label":"Free credits + priority rate limits (amounts not published)","url":"https://claude.com/programs/startups","difficulty":"moderate","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","requirements":["Founded within the last 4 years","Equity funding from an institutional investor","Must not have received Anthropic startup credits before","Claude Console account and a company email address"],"notes":"Anthropic's own page contradicts itself: the FAQ lists institutional equity funding as a requirement, then states the programme is open to founders with or without VC backing. No figures are published anywhere official - third parties report $5,000 direct and $25,000 with a VC referral. Mention your investor when you apply.","last_checked":"2026-09-19"},
-    {"id":"ibm-startups","company":"IBM","name":"IBM for Startups","track":"startup","category":"Cloud","value_usd":120000,"value_label":"Up to $120,000 (reported, not published)","url":"https://www.ibm.com/products/startups","difficulty":"moderate","referral_required":false,"recurring":false,"status":"unverified","country":"GLOBAL","source":"reported","requirements":["Reported: under 5 years old, under $1M revenue, working MVP, not a current IBM customer"],"notes":"Checked 2026-09-19: could not find these terms anywhere on ibm.com. Every figure here comes from third-party directories. Verify before spending time on an application.","last_checked":"2026-09-19"},
-    {"id":"oracle-startups","company":"Oracle","name":"Oracle for Startups","track":"startup","category":"Cloud","value_usd":100000,"value_label":"Up to $100,000 OCI credits (reported)","url":"https://www.oracle.com/startup/","difficulty":"moderate","referral_required":false,"recurring":false,"status":"unverified","country":"GLOBAL","source":"reported","requirements":["Reported: under 10 years old, working MVP, not a current Oracle customer"],"notes":"Checked 2026-09-19: oracle.com/startup returns 403 to automated checks, so nothing here is confirmed from source. Verify manually before applying.","last_checked":"2026-09-19"},
-    {"id":"digitalocean-hatch","company":"DigitalOcean","name":"DigitalOcean for Startups (Hatch)","track":"startup","category":"Cloud","value_usd":null,"value_label":"Amount not published - set by your partner","url":"https://www.digitalocean.com/hatch","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","requirements":["Must have raised $10M or less","Company website and a matching business email address","Registered DigitalOcean team account","AI-native startups are prioritised; consultancies and agencies are not eligible"],"notes":"Corrected 2026-09-19: DigitalOcean publishes no award amounts at all, so the $100,000 other directories quote is unsourced. Bootstrapped founders can still apply directly by selecting 'Other' as the partner organisation. A $10,000/month spend cap is mentioned.","last_checked":"2026-09-19"},
-    {"id":"together-startups","company":"Together AI","name":"Together AI Startup Program","track":"startup","category":"AI & ML","value_usd":50000,"value_label":"Up to $50,000 credits (reported)","url":"https://www.together.ai/","difficulty":"moderate","referral_required":false,"recurring":false,"status":"unverified","country":"GLOBAL","source":"reported","requirements":["Early-stage startup using open-model inference"],"notes":"Checked 2026-09-19: the startup programme form returns 404 and no public page states the amount. $100 free on signup is separate and does work. 200+ open models including Llama, DeepSeek and Qwen.","last_checked":"2026-09-19"},
-    {"id":"mistral-startups","company":"Mistral AI","name":"Mistral Startup Program","track":"startup","category":"AI & ML","value_usd":null,"value_label":"Credits - amount not published","url":"https://mistral.ai/","difficulty":"moderate","referral_required":false,"recurring":false,"status":"unverified","country":"GLOBAL","source":"reported","requirements":["Early-stage startup building on Mistral models"],"notes":"Checked 2026-09-19: no public page states terms or amounts. Verify on application.","last_checked":"2026-09-19"},
-    {"id":"openai-startups","company":"OpenAI","name":"OpenAI Startup Credits","track":"startup","category":"AI & ML","value_usd":0,"value_label":"Discontinued","url":"https://openai.com/","difficulty":"easy","referral_required":false,"recurring":false,"status":"ended","country":"GLOBAL","source":"reported","requirements":[],"notes":"OpenAI no longer runs a general startup credits programme, yet several directories still list it. To reach OpenAI models on credits, use Microsoft for Startups Azure credits through Microsoft Foundry instead. Their Codex for Open Source programme is separate and does still run.","last_checked":"2026-09-19"},
-    {"id":"nvidia-inception","company":"NVIDIA","name":"NVIDIA Inception","track":"startup","category":"AI & ML","value_usd":null,"value_label":"Free cloud credits from NVIDIA and partners - amount not published","url":"https://www.nvidia.com/en-us/startups/","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":null,"source_quote":"Access free cloud credits from NVIDIA and partners for more flexible, scalable development and deployment.","requirements":["Building an AI product","Open to startups at any funding stage","No application fee and no cohort deadline"],"notes":"No fixed amount is published. Worth applying anyway because there is no deadline, no cost and no funding-stage bar - unusually open compared with everything else on this page.","last_checked":"2026-09-19"},
-    {"id":"in-startup-india-seed-fund","company":"Startup India (DPIIT)","name":"Startup India Seed Fund Scheme","track":"startup","category":"Government","value_usd":null,"value_label":"Up to ₹20 lakh grant, plus up to ₹50 lakh investment or debt","url":"https://seedfund.startupindia.gov.in/","difficulty":"moderate","referral_required":true,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"Up to Rs. 20 Lakhs as grant","requirements":["DPIIT-recognised startup","Incorporated no more than 2 years before applying","You apply through an approved incubator, not directly to the government"],"notes":"This is cash, not credits, and the ₹20 lakh portion is a grant you do not repay - for proof of concept, prototype or product trials. The larger ₹50 lakh portion is debt or convertible instruments for going to market. The two-year age limit is strict, so apply early.","last_checked":"2026-09-19"},
-    {"id":"in-80iac-tax","company":"Startup India (DPIIT)","name":"Section 80-IAC Tax Exemption","track":"startup","category":"Government","value_usd":null,"value_label":"100% income-tax deduction for 3 financial years","url":"https://www.startupindia.gov.in/content/sih/en/form80iac.html","difficulty":"moderate","referral_required":false,"recurring":false,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"100% tax deduction for three consecutive financial years","requirements":["DPIIT-recognised startup","Private Limited Company or LLP","Incorporated on or after 1 April 2016 and under 10 years old","Annual turnover below ₹100 crore"],"notes":"Not money in, but money you keep - three years of profits taxed at zero. Worth nothing until you are profitable, and worth a great deal the moment you are. The value depends entirely on your profit, so no figure can be quoted.","last_checked":"2026-09-19"},
-    {"id":"in-credit-guarantee","company":"Startup India (DPIIT)","name":"Credit Guarantee Scheme for Startups","track":"startup","category":"Government","value_usd":null,"value_label":"Government guarantee on borrowing, up to ₹20 crore per startup","url":"https://www.startupindia.gov.in/content/sih/en/credit-guarantee-scheme-for-startups.html","difficulty":"moderate","referral_required":true,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"maximum limit from INR 10 crore to INR 20 crore per eligible borrower","requirements":["DPIIT-recognised startup","Borrowing arranged through an approved Member Institution","You approach the lender; you do not apply to the government directly"],"notes":"Read this one carefully: it is NOT ₹20 crore of free money. The government guarantees your loan, which lets banks lend without demanding the collateral a young company cannot provide. You still repay the loan.","last_checked":"2026-09-19"},
-    {"id":"in-nidhi-seed-support","company":"Dept. of Science & Technology","name":"NIDHI Seed Support Programme","track":"startup","category":"Government","value_usd":null,"value_label":"Up to ₹100 lakh per startup","url":"https://nidhi.dst.gov.in/nidhissp/","difficulty":"hard","referral_required":true,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"maximum support that will be given to a deserving startup is up to INR 100 lakh","requirements":["Apply through a participating Technology Business Incubator, not to DST directly","Each incubator runs its own calls on its own timetable"],"notes":"The largest single figure in India's public schemes. Because access runs through incubators, getting into a good TBI is the real unlock - the same pattern as cloud partner tiers.","last_checked":"2026-09-19"},
-    {"id":"in-nidhi-prayas","company":"Dept. of Science & Technology","name":"NIDHI PRAYAS 2.0","track":"startup","category":"Government","value_usd":null,"value_label":"Up to ₹20 lakh, or ₹40 lakh via Advance PRAYAS Centres","url":"https://nidhi.dst.gov.in/prayas2-0/","difficulty":"moderate","referral_required":true,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"funding support of up to INR 40 Lakhs per innovator/startup","requirements":["Technology-based innovator or startup","Focused on building a prototype","Selected through a PRAYAS Centre or Advance PRAYAS Centre"],"notes":"Aimed at the stage before you have anything to sell - money specifically to build the prototype. Advance PRAYAS Centres handle deeptech and harder hardware builds.","last_checked":"2026-09-19"},
-    {"id":"in-nidhi-eir","company":"Dept. of Science & Technology","name":"NIDHI Entrepreneur-in-Residence","track":"startup","category":"Government","value_usd":null,"value_label":"₹10,000–₹30,000 a month for up to 12 months","url":"https://nidhi.dst.gov.in/nidhieir/","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"financial support of up to INR 30,000/- monthly","requirements":["Aimed at graduate students and first-time entrepreneurs","Technology entrepreneurship focus","Up to 12 months of support"],"notes":"This pays YOU, not the company - a salary while you work on the idea. Close to unique, and the right starting point for a student or someone who cannot yet afford to quit a job.","last_checked":"2026-09-19"},
-    {"id":"in-birac-big","company":"BIRAC","name":"Biotechnology Ignition Grant (BIG)","track":"startup","category":"Government","value_usd":null,"value_label":"₹50 lakh grant-in-aid over up to 18 months","url":"https://www.birac.nic.in/big.php","difficulty":"hard","referral_required":false,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"early-stage funding support of INR 50 Lakhs as grant-in-aid","requirements":["Biotechnology or related life-sciences innovation","Early stage, working toward proof of concept","Clear commercialisation potential"],"notes":"Grant-in-aid means you do not repay it and give up no equity. Calls open roughly twice a year. If you are in biotech this is among the best-value money available anywhere.","last_checked":"2026-09-19"},
-    {"id":"in-meity-genesis","company":"MeitY","name":"GENESIS / GEN-NEXT Support for Innovative Startups","track":"startup","category":"Government","value_usd":null,"value_label":"₹10 lakh early stage, ₹50 lakh pilot, up to ₹1 crore deeptech","url":"https://msh.meity.gov.in/","difficulty":"moderate","referral_required":true,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"upper ceiling of Rs. 1 Cr per startup","requirements":["Technology startup","Deliberately targets Tier-II and Tier-III cities","Selected through GENESIS implementing agencies","Each funding component has its own criteria"],"notes":"Specifically designed for founders outside Bengaluru, Delhi and Mumbai. If you are building somewhere smaller, this scheme was written with you in mind and competition is lighter.","last_checked":"2026-09-19"},
-    {"id":"in-meity-samridh","company":"MeitY Startup Hub","name":"SAMRIDH","track":"startup","category":"Government","value_usd":null,"value_label":"Matching funding up to ₹40 lakh","url":"https://msh.meity.gov.in/schemes/samridh","difficulty":"hard","referral_required":true,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"one-to-one matching funding support of up to INR 40 lakh","requirements":["Selected through a participating accelerator","Funding is matched one-to-one, so you need an investor alongside it"],"notes":"Matching means the government puts in roughly what an investor puts in. You need to raise the other half first, so this suits startups already in conversation with investors.","last_checked":"2026-09-19"},
-    {"id":"in-karnataka-elevate","company":"Government of Karnataka","name":"ELEVATE","track":"startup","category":"Government","value_usd":null,"value_label":"Up to ₹50 lakh main track / up to ₹50 lakh Minorities track / up to ₹1 crore milestone track","url":"https://elevate.startupkarnataka.in/","difficulty":"hard","referral_required":false,"recurring":true,"status":"closed","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"Selected startup will be eligible for up to ₹1 crore in grant in aid support.","requirements":["Startup registered in Karnataka","Competitive selection","Previous ELEVATE winners may be restricted","ELEVATE Minorities: a Director or Partner must belong to a recognised minority community and hold at least 51% equity","ELEVATE Minorities: that Director or Partner needs a valid digital Minority Certificate from the Revenue Department, Government of Karnataka, with an RD Number","Turnover must not exceed ₹300 crore in any financial year since incorporation"],"notes":"Corrected 2026-09-20: we listed only the ₹50 lakh headline and missed a milestone-based track worth up to ₹1 crore, plus the separate ELEVATE Minorities track and its 51% equity and Minority Certificate conditions. The 2026 call closed on 15 July 2026; the scheme runs repeatedly, so watch the portal for the next round rather than applying now. Grants pay out against milestones, not in one lump.","last_checked":"2026-09-20"},
-    {"id":"in-startup-odisha","company":"Startup Odisha","name":"Startup Odisha Financial Incentives","track":"startup","category":"Government","value_usd":null,"value_label":"₹20,000/month allowance, plus product development assistance up to ₹16 lakh","url":"https://startupodisha.gov.in/startup-incentives/","difficulty":"moderate","referral_required":false,"recurring":true,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"Product Development and Marketing/ Publicity assistance up to Rs. 15 lakh (Upto Rs.16 lakhs, if the startup Founder (s)/Co-Founder (s) is Woman or transgender or from Social Categories such as SC/ST/SEBC/PH","requirements":["Recognised Startup Odisha entity","Monthly allowance is Rs 20,000, or Rs 22,000 if a founder is a woman, transgender, or from SC/ST/SEBC/PH","The product development grant needs equity financing of at least Rs 25 lakh, OR a central/state government grant of at least Rs 5 lakh, OR a revenue run rate of Rs 2.5 lakh a month over the last six months","Bills and utilisation reports may be required"],"notes":"Corrected 2026-09-20: we led with the Rs 20,000 monthly allowance and buried the bigger benefit under 'further assistance'. Product development and marketing assistance runs to Rs 15 lakh, or Rs 16 lakh if a founder is a woman, transgender or from SC/ST/SEBC/PH - about six times the annual allowance - and carries its own eligibility gate. The enhanced Rs 22,000 allowance rate was also missing. Every Indian state runs something like this; if you are not in Odisha, search your own state's startup policy.","last_checked":"2026-09-20"},
-    {"id":"in-razorpay-rize","company":"Razorpay","name":"Razorpay Rize","track":"startup","category":"Perks bundle","value_usd":null,"value_label":"Bundle of third-party tool deals - headline $500,000 is an advertised aggregate","url":"https://razorpay.com/rize/community/","difficulty":"moderate","referral_required":false,"recurring":false,"status":"open","country":"IN","source":"official","unlocks_partner_tier":null,"source_quote":"Get $500,000 in credits for tools like AWS, Canva, Notion, and more.","requirements":["Founder, admitted selectively to one of the Rize communities","Tech, D2C or export-focused tracks","Primarily aimed at founders building in India"],"notes":"We deliberately do not record $500,000 as a value. It is the advertised sum of many separate third-party offers added together, not credits Razorpay awards you, and there is no published AWS-specific amount. Treat it as a useful bundle of discounts and a founder community, not half a million dollars.","last_checked":"2026-09-19"},
-    {"id":"elevenlabs-grants","company":"ElevenLabs","name":"ElevenLabs Grants","track":"startup","category":"AI & ML","value_usd":5500,"entry_usd":5500,"value_label":"33,000,000 characters over 12 months (~$5,500+ value)","url":"https://elevenlabs.io/grants","difficulty":"moderate","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":null,"source_quote":"33,000,000 characters. That's over 680 hours of Agents usage. More than $5,500+ in value.","requirements":["Fewer than 25 employees","Must have a business or monetisation strategy - not a hobby project","Valid business email required","NOT eligible: agencies, consulting firms, existing enterprise customers","Not for products aimed at under-18s","One application per company"],"notes":"One of the very few AI programmes with a published value AND no investor requirement. If you are building anything with voice, this is among the best returns for an hour of application work on the whole page.","last_checked":"2026-09-19"},
-    {"id":"mongodb-startups","company":"MongoDB","name":"MongoDB for Startups","track":"startup","category":"Database","value_usd":null,"value_label":"Atlas credits across 4 tiers - amounts not published","url":"https://www.mongodb.com/solutions/startups","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":"A VC or accelerator referral moves you up the tier ladder","source_quote":"If you are not involved with a VC, accelerator, or incubator, please apply above on this page.","requirements":["Under 7 years old, Series A or earlier","One software product or service","NOT eligible: development shops and agencies","Active company website and LinkedIn profile","Not previously accepted into the programme"],"notes":"MongoDB states plainly that bootstrapped founders should apply directly, and 'Bootstrapped' is an option on their own form - unusually welcoming. The four tiers are named but no amounts are published for any of them.","last_checked":"2026-09-19"},
-    {"id":"intercom-early-stage","company":"Intercom","name":"Intercom Early Stage","track":"startup","category":"Communication","value_usd":null,"value_label":"93% off year 1, 50% year 2, 25% year 3","url":"https://www.intercom.com/early-stage","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":null,"source_quote":"Up to $10M in funding","requirements":["Raised up to $10M in funding - bootstrapped is fine","Fewer than 15 employees","Not currently an Intercom customer"],"notes":"A discount, not credits, so no dollar figure is recorded. Year one includes the Fin AI agent free with 300 outcomes a month. No age limit is stated - only funding and headcount.","last_checked":"2026-09-19"},
-    {"id":"hubspot-startups","company":"HubSpot","name":"HubSpot for Startups","track":"startup","category":"Sales & Marketing","value_usd":null,"value_label":"90% off year 1 with funding, or 30% via a partner org","url":"https://www.hubspot.com/startups","difficulty":"moderate","referral_required":true,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":"Approved HubSpot for Startups partner organisation","source_quote":"Raised Pre-seed, Seed or Series A funding, but not Series B or later","requirements":["Either verified venture funding (checked via Crunchbase or PitchBook), OR affiliation with an approved partner organisation","Pre-seed, Seed or Series A - not Series B or later","Applies only to new Professional or Enterprise products"],"notes":"A discount, not credits. Fully bootstrapped founders with no partner affiliation are not listed as an eligible category - this is one of the few programmes where having raised nothing genuinely shuts the door.","last_checked":"2026-09-19"},
-    {"id":"notion-startups","company":"Notion","name":"Notion for Startups","track":"startup","category":"Productivity","value_usd":null,"value_label":"3 months free alone, 6 with a partner (up to $12,000 value)","url":"https://www.notion.com/startups","difficulty":"easy","referral_required":false,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":"A select Notion startup partner doubles 3 months to 6","source_quote":"For non-paying Notion customers with under 100 employees and are affiliated with one of our select startup partners","requirements":["Under 100 employees and not already paying for Notion","Valid company domain email - Gmail and Outlook addresses are rejected","A real business website","No prior Notion promotion"],"notes":"The headline $12,000 assumes 100 employees; a small team gets a fraction of that, which is why no figure is recorded here. Bootstrapped founders can apply alone for 3 months.","last_checked":"2026-09-19"},
-    {"id":"modal-startups","company":"Modal","name":"Modal for Startups","track":"startup","category":"AI & ML","value_usd":null,"value_label":"GPU credits - amount not published","url":"https://modal.com/startups","difficulty":"hard","referral_required":true,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":"Modal VC partner network - any amount raised from a partner fund qualifies","source_quote":"Unlock thousands of free GPU credits to supercharge your startup.","requirements":["Seed to Series A: any VC money from Modal's partner network, OR over $1M raised from any fund","Series B+: over $30M raised AND the VC must be in Modal's partner network"],"notes":"Hard requirement: there is no route in without venture funding. Worth knowing so you don't waste time - but note that ANY amount from a partner fund qualifies, so a small cheque from the right investor is enough.","last_checked":"2026-09-19"},
-    {"id":"fireworks-startups","company":"Fireworks AI","name":"Fireworks AI Startup Program","track":"startup","category":"AI & ML","value_usd":null,"value_label":"Inference credits, expire after 1 year - amount not published","url":"https://fireworks.ai/startups","difficulty":"hard","referral_required":true,"recurring":false,"status":"open","country":"GLOBAL","source":"official","unlocks_partner_tier":null,"source_quote":"Venture backed startups with >$500k in funding","requirements":["Registered company with a working website","Privately held and for-profit","Founded within the last 5 years","Venture backed with over $500k raised","Not Series D or later"],"notes":"The $500k funding floor is explicit, so bootstrapped founders are out. Credits expire after 12 months.","last_checked":"2026-09-19"}
+    {
+      "id": "1password-oss",
+      "company": "1Password",
+      "name": "1Password for Open Source",
+      "track": "oss",
+      "category": "Security",
+      "value_usd": null,
+      "value_label": "Free Teams account for approved open source projects",
+      "url": "https://github.com/1Password/for-open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Team account required",
+        "Core contributor to an active permissively licensed project at least 30 days old",
+        "Commercial activity excluded except permitted open source funding"
+      ],
+      "source_quote": "get a free Teams account on us.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://github.com/1Password/for-open-source",
+        "source_sha256": "78a047d962a6e2073aa0edce1020c555a725be6c660163da8dc453687479a1dc",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "algolia-oss",
+      "company": "Algolia",
+      "name": "Algolia for Open Source",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Discounted or free search for qualifying open source projects",
+      "url": "https://www.algolia.com/for-open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Publicly usable project",
+        "Valid open source license for software",
+        "Commercial affiliation reviewed case by case"
+      ],
+      "source_quote": "at a discount or for free.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.algolia.com/for-open-source",
+        "source_sha256": "7d9c173e995756b232371e01b8bc442800d55d67bd3265a7566be481ba67629d",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "anthropic-oss",
+      "company": "Anthropic",
+      "name": "Claude for Open Source",
+      "track": "oss",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Six months of free Claude Max for selected open source contributors",
+      "url": "https://claude.com/contact-sales/claude-for-oss",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Maintainer adoption or contributor activity criteria apply",
+        "Exceptions may be considered for ecosystem importance"
+      ],
+      "source_quote": "6 months of free Claude Max 20x.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://claude.com/contact-sales/claude-for-oss",
+        "source_sha256": "591b16ac72a8b0181a4cbfcd3fab98f29d5e7a16b3690bef35f42bc96f654e03",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "vercel-oss",
+      "company": "Vercel",
+      "name": "Vercel Open Source Program",
+      "track": "oss",
+      "category": "Hosting",
+      "value_usd": null,
+      "value_label": "Platform credits over three years for selected open source projects",
+      "url": "https://vercel.com/open-source-program",
+      "status": "closed",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Actively developed open source project",
+        "Credits restricted to the open source project"
+      ],
+      "source_quote": "Applications are currently closed.",
+      "notes": "Provider states applications are currently closed.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://vercel.com/open-source-program",
+        "source_sha256": "690d47d0f302e863112d58f94384ec2392ffceb372f8dfea703e66271123c63a",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "neon-oss",
+      "company": "Neon",
+      "name": "Neon Open Source Program",
+      "track": "oss",
+      "category": "Database",
+      "value_usd": null,
+      "value_label": "Yearly Postgres platform credits and promotion for selected projects",
+      "url": "https://neon.com/programs/open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project using Postgres",
+        "Selection required"
+      ],
+      "source_quote": "up to $5,000 yearly in credits",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://neon.com/programs/open-source",
+        "source_sha256": "38f0037d69c63fde064fba58370d0b5b6b5a41ca36ed3cbd64491255866ac4ab",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "mintlify-oss",
+      "company": "Mintlify",
+      "name": "Mintlify OSS Program",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Free Pro documentation plan for qualifying non-commercial open source",
+      "url": "https://www.mintlify.com/oss-program",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Recognized open source license",
+        "Not venture backed or funded by revenue"
+      ],
+      "source_quote": "Mintlify Pro free, forever.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.mintlify.com/oss-program",
+        "source_sha256": "5cb0a220af32f9be34691c7331fab8f443b608d3cbfd0e13909b6052f217cb9a",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "snyk-oss",
+      "company": "Snyk",
+      "name": "Snyk for Open Source",
+      "track": "oss",
+      "category": "Security",
+      "value_usd": null,
+      "value_label": "Complimentary developer security tooling for selected open source maintainers",
+      "url": "https://snyk.io/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source maintainer application required"
+      ],
+      "source_quote": "complimentary access to our industry-leading developer security tooling",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://snyk.io/open-source/",
+        "source_sha256": "af384ea1d893cf2119fd968617e2c3e261cf055cd63f8e70a6073bf3a704c4e7",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "browserstack-oss",
+      "company": "BrowserStack",
+      "name": "Open Source Program",
+      "track": "oss",
+      "category": "Testing",
+      "value_usd": null,
+      "value_label": "Sponsored browser and device testing for open source projects",
+      "url": "https://www.browserstack.com/open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project application required"
+      ],
+      "source_quote": "Get lifetime access to test your open source project",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.browserstack.com/open-source",
+        "source_sha256": "9a88c9192b8f5d1a542ef6f01de57a0c1c76e6803c7b0f48e88f822c2cc37867",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "sentry-oss",
+      "company": "Sentry",
+      "name": "Sentry for Open Source",
+      "track": "oss",
+      "category": "Monitoring",
+      "value_usd": null,
+      "value_label": "Free account for selected open source projects",
+      "url": "https://sentry.io/for/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project application required"
+      ],
+      "source_quote": "Apply for a free Sentry account",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://sentry.io/for/open-source/",
+        "source_sha256": "96257a7682de8691e2dde40c6476440ed01004b28bd2a81d0a3f48c9076d39a0",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "datadog-oss",
+      "company": "Datadog",
+      "name": "Datadog for Open Source",
+      "track": "oss",
+      "category": "Monitoring",
+      "value_usd": null,
+      "value_label": "No-cost observability for approved non-commercial open source infrastructure",
+      "url": "https://www.datadoghq.com/partner/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Non-commercial approved open source license",
+        "Monitored infrastructure must directly support the project",
+        "Applications evaluated case by case"
+      ],
+      "source_quote": "access to Datadog at no cost.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.datadoghq.com/partner/open-source/",
+        "source_sha256": "0cbfa40c155f4fada45a1195ca669fea3e873cc50741a280edf446be73c097c1",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "netlify-oss",
+      "company": "Netlify",
+      "name": "Netlify Open Source Plan",
+      "track": "oss",
+      "category": "Hosting",
+      "value_usd": null,
+      "value_label": "Free platform plan for qualifying non-commercial open source",
+      "url": "https://www.netlify.com/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Active project with OSI or Creative Commons license",
+        "Code of Conduct required",
+        "Link back to Netlify required",
+        "Non-commercial project"
+      ],
+      "source_quote": "Qualifying projects get the full Netlify platform, free.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.netlify.com/open-source/",
+        "source_sha256": "aa8304d380f9d1ca90750a70f0d79db387f6562ea8433d9f2896f7f7fc09905d",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "circleci-oss",
+      "company": "CircleCI",
+      "name": "CircleCI for Open Source",
+      "track": "oss",
+      "category": "CI/CD",
+      "value_usd": null,
+      "value_label": "Open source build credits with platform-specific limits",
+      "url": "https://circleci.com/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source plan required",
+        "Linux, Arm and Docker allowance differs from Windows and macOS"
+      ],
+      "source_quote": "400,000 credits per month",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://circleci.com/open-source/",
+        "source_sha256": "745a5baf2be05a93f3fc66e96e7915f422a1e3933ceba3a6f0a16da2b8e6a348",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "blacksmith-oss",
+      "company": "Blacksmith",
+      "name": "Blacksmith for OSS",
+      "track": "oss",
+      "category": "CI/CD",
+      "value_usd": null,
+      "value_label": "Sponsored CI for qualifying open source projects",
+      "url": "https://www.blacksmith.sh/pricing#oss",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Permissive open source license",
+        "Clear community usage"
+      ],
+      "source_quote": "Permissive OSS license",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.blacksmith.sh/pricing#oss",
+        "source_sha256": "73017d7b1b38c3d6fd9043e4d4fd3d8908c69ef5937a8bcf33d61007ed621564",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "greptile-oss",
+      "company": "Greptile",
+      "name": "Greptile for Open Source",
+      "track": "oss",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Free code reviews for qualifying non-commercial open source",
+      "url": "https://www.greptile.com/open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Public GitHub or GitLab repository",
+        "At least 50 stars",
+        "OSI license",
+        "Project not part of a commercial product"
+      ],
+      "source_quote": "free AI code reviews for eligible non-commercial open-source projects.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.greptile.com/open-source",
+        "source_sha256": "14be59a83bb455f7921699b60e15ccb32b0848d2afedf9986e75c72722522d36",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "openpanel-oss",
+      "company": "OpenPanel",
+      "name": "OpenPanel for Open Source",
+      "track": "oss",
+      "category": "Analytics",
+      "value_usd": null,
+      "value_label": "Free analytics for qualifying open source projects",
+      "url": "https://openpanel.dev/open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "OSI license",
+        "Public repository",
+        "Primarily non-commercial purpose"
+      ],
+      "source_quote": "up to 2.5M events per month.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://openpanel.dev/open-source",
+        "source_sha256": "6d3e7bd487cdfce0c0169402feaf41424529eb19f73c41693ccd1227d8b51ce6",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "convex-oss",
+      "company": "Convex",
+      "name": "Convex Open Source Program",
+      "track": "oss",
+      "category": "Database",
+      "value_usd": null,
+      "value_label": "Free Pro plan within included limits for selected open source teams",
+      "url": "https://www.convex.dev/open-source-program",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Active fully open source project",
+        "Developer ecosystem usefulness",
+        "Funded companies directed to the startup program"
+      ],
+      "source_quote": "Free Convex Pro for one team",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.convex.dev/open-source-program",
+        "source_sha256": "e7a40906187bb88e2b8690f9ef7a44f4c517ab3af0ae9e179d003036fe7da974",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "sanity-oss",
+      "company": "Sanity",
+      "name": "Sanity Open Source Plan",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Free non-profit plan within quotas for qualifying open source",
+      "url": "https://www.sanity.io/docs/open-source-plan",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source funded by sponsorship or voluntary effort",
+        "Not monetized",
+        "Valid Sanity project ID required"
+      ],
+      "source_quote": "we offer it for free",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.sanity.io/docs/open-source-plan",
+        "source_sha256": "e4cc1d3d693e62461c07378340e2b26c0fbc097f005ea731ee7b57f1388e7d0d",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "gitbook-oss",
+      "company": "GitBook",
+      "name": "Non-profit / Open Source Plan",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Free Community documentation plan for qualifying organizations",
+      "url": "https://docs.gitbook.com/account-management/plans",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Eligible open source organization",
+        "Community plan excludes SAML SSO"
+      ],
+      "source_quote": "apply for the free Community plan",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://docs.gitbook.com/account-management/plans",
+        "source_sha256": "78fbd94cce75dc96a1b3fe1b926e978d19ca3eee9c78272d44a9bc115161485d",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "crowdin-oss",
+      "company": "Crowdin",
+      "name": "Crowdin for Open Source",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Free localization for qualifying open source projects",
+      "url": "https://crowdin.com/page/open-source-project-setup-request",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Approved open source license",
+        "No related commercial product",
+        "At least three months of project work"
+      ],
+      "source_quote": "Crowdin is completely free of charge for open-source projects.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://crowdin.com/page/open-source-project-setup-request",
+        "source_sha256": "d22fe3af9d4811e5e47b9f2b7e44bf426568c209757aa353deba5202f4267644",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "stainless-oss",
+      "company": "Stainless",
+      "name": "Stainless for OSS",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Free Starter SDK plan for qualifying non-commercial open source",
+      "url": "https://stainless.com/pricing",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Non-commercial FOSS project",
+        "Create a free account then request the program"
+      ],
+      "source_quote": "Starter plan for free to qualifying non-commercial open source",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://stainless.com/pricing",
+        "source_sha256": "1c1ea2ef5d2c88cd276ba2b71e1b3515d7eb16740cffd225f01078284c8a244c",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "zulip-oss",
+      "company": "Zulip",
+      "name": "Zulip for Open Source",
+      "track": "oss",
+      "category": "Communication",
+      "value_usd": null,
+      "value_label": "Free Cloud Standard for open source communities",
+      "url": "https://zulip.com/for/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source community"
+      ],
+      "source_quote": "Zulip Cloud Standard is free for open-source",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://zulip.com/for/open-source/",
+        "source_sha256": "6cf4f82b9999537d404c148827a54f213c95322c042d19fa9ef690dfee2a23d9",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "codecov-oss",
+      "company": "Codecov",
+      "name": "Codecov for Open Source",
+      "track": "oss",
+      "category": "Testing",
+      "value_usd": null,
+      "value_label": "Free coverage tooling for open source projects",
+      "url": "https://about.codecov.io/for/open-source/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project"
+      ],
+      "source_quote": "Codecov is a free tool for open source projects",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://about.codecov.io/for/open-source/",
+        "source_sha256": "f3ccc4cdaaef92600a2fdc84c3c5b74531682e62d2307fefabe3111dd16f7974",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "coveralls-oss",
+      "company": "Coveralls",
+      "name": "Coveralls for Open Source",
+      "track": "oss",
+      "category": "Testing",
+      "value_usd": null,
+      "value_label": "Free test coverage service for open source repositories",
+      "url": "https://coveralls.io/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source repository"
+      ],
+      "source_quote": "Free for open source repos.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://coveralls.io/",
+        "source_sha256": "ef4a7042bfb00d92ee125a3a9a1df9692c3512df0c238fdf474ac8d7ae92c510",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "chromatic-oss",
+      "company": "Chromatic",
+      "name": "Chromatic for Open Source",
+      "track": "oss",
+      "category": "Testing",
+      "value_usd": null,
+      "value_label": "Sponsored visual testing for qualifying component libraries and design systems",
+      "url": "https://chromatic.com/docs/open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source design system or UI component library",
+        "Community reach criteria apply"
+      ],
+      "source_quote": "35k snapshots per month, Chrome only",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://chromatic.com/docs/open-source",
+        "source_sha256": "84a2107d972f1fe1c3477b2a6136cbaa3fc6cf8bdbeaa1a05955403832627022",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "argos-oss",
+      "company": "Argos",
+      "name": "Argos for Open Source",
+      "track": "oss",
+      "category": "Testing",
+      "value_usd": null,
+      "value_label": "Selected open source visual-testing sponsorship",
+      "url": "https://argos-ci.com/docs/open-source",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source non-commercial project",
+        "Explain why the Hobby plan does not meet project needs"
+      ],
+      "source_quote": "Argos sponsors selected open-source projects with free usage.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://argos-ci.com/docs/open-source",
+        "source_sha256": "4ef8f599061b8aa34d0c41689ed6d031ec5e2656a9c3ce7a20dc45fbaadc3069",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "sonarqube-oss",
+      "company": "SonarSource",
+      "name": "SonarQube Cloud for Open Source",
+      "track": "oss",
+      "category": "Security",
+      "value_usd": null,
+      "value_label": "Free Cloud analysis for open source projects",
+      "url": "https://www.sonarsource.com/open-source-editions/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project",
+        "Paid Server editions are a separate product"
+      ],
+      "source_quote": "SonarQube Cloud is entirely free for all open source projects.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.sonarsource.com/open-source-editions/",
+        "source_sha256": "0dc2ee67577634fbe9defa1ce5e4d1d0b1a30461ddc624da21c863b9f5335a53",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "signpath-oss",
+      "company": "SignPath",
+      "name": "SignPath Foundation",
+      "track": "oss",
+      "category": "Security",
+      "value_usd": null,
+      "value_label": "Sponsored signing and software integrity tools for open source",
+      "url": "https://signpath.io/solutions/open-source-community",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project sponsorship"
+      ],
+      "source_quote": "available at no cost.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://signpath.io/solutions/open-source-community",
+        "source_sha256": "4803753f9d09444c4c34017d779c55814dee05d780f0fa66d3948c5507a06513",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "sourcery-oss",
+      "company": "Sourcery",
+      "name": "Sourcery for Open Source",
+      "track": "oss",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Free reviews for public open source repositories",
+      "url": "https://sourcery.ai/pricing",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Public GitHub or GitLab repository"
+      ],
+      "source_quote": "Yes. Install Sourcery on your public repositories",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://sourcery.ai/pricing",
+        "source_sha256": "e35ce72c02d4ae0b0f0ce6ae24b96469a30ebe51871cf5b2806f55898b7abd57",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "webclaw-oss",
+      "company": "Webclaw",
+      "name": "Webclaw for OSS",
+      "track": "oss",
+      "category": "Dev Tools",
+      "value_usd": null,
+      "value_label": "Recurring scraping credits for qualifying active open source integrations",
+      "url": "https://webclaw.io/oss",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Real maintained open project",
+        "Documented webclaw integration",
+        "Badge required after approval"
+      ],
+      "source_quote": "100,000 free web-scraping credits a month",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://webclaw.io/oss",
+        "source_sha256": "ba842d1e46710c395f8d5c8bfdcf37c65b827934267fc1da8552d67bc17709da",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "upstash-oss",
+      "company": "Upstash",
+      "name": "Upstash Open Source Program",
+      "track": "oss",
+      "category": "Database",
+      "value_usd": null,
+      "value_label": "Monthly credit sponsorship. Applications currently closed.",
+      "url": "https://upstash.com/open-source",
+      "status": "closed",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Open source project using Upstash"
+      ],
+      "source_quote": "currently closed and not accepting new applications.",
+      "notes": "Provider states applications are currently closed.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://upstash.com/open-source",
+        "source_sha256": "deaf27e752ad1584cc182b2c05cdae5aed812f792f4b0f067bde95202de167c1",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "cloudflare-startups",
+      "company": "Cloudflare",
+      "name": "Cloudflare for Startups",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "Tiered credits for selected startups with separate service caps",
+      "url": "https://www.cloudflare.com/forstartups/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Bootstrapped tier available",
+        "Higher tiers require affiliated partner funding",
+        "Workers AI and R2 have separate caps"
+      ],
+      "source_quote": "Get started with $10k in credits",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.cloudflare.com/forstartups/",
+        "source_sha256": "23c045cf68da3d2fcca1b916352095cf5d2aea31f150bdc70f6578d0b8760e6e",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "aws-activate",
+      "company": "AWS",
+      "name": "AWS Activate",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "Activate Founders and Portfolio credits for eligible startups",
+      "url": "https://aws.amazon.com/startups/credits",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Founders for self-funded startups",
+        "Portfolio requires genuine Activate Provider affiliation",
+        "Account and company eligibility review applies"
+      ],
+      "source_quote": "Up to $200,000 USD in Activate Credits",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://aws.amazon.com/startups/credits",
+        "source_sha256": "393ac123955063c752f464a76a87115e91dc62fef68ffd52fcdbcb66046c696e",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "gcp-startups",
+      "company": "Google Cloud",
+      "name": "Google for Startups Start tier",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "Start tier cloud credits for eligible pre-funded startups",
+      "url": "https://cloud.google.com/startup/pre-funded",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Working MVP and clear technology business model",
+        "Founded within twenty-four months",
+        "Plans to seek venture funding soon",
+        "No previous Google Cloud credits beyond free trial"
+      ],
+      "source_quote": "$2,000 in Cloud credits",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://cloud.google.com/startup/pre-funded",
+        "source_sha256": "ea9a50591acbff46ab9110c8450b4a3e05e5a78d392296b275037adaadded9da",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "neon-startups",
+      "company": "Neon",
+      "name": "Neon for Startups",
+      "track": "startup",
+      "category": "Database",
+      "value_usd": null,
+      "value_label": "Self-funded Neon and funded Databricks startup credit tracks",
+      "url": "https://neon.com/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Self-funded early product with less than one million in funding",
+        "Funded track requires qualifying funding or accelerator participation"
+      ],
+      "source_quote": "Up to $1,000 in Neon credits.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://neon.com/startups",
+        "source_sha256": "f55ddb138befbd33d298f8b643c0f562008cf67531536bf494eabde7ab26857f",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "databricks-startups",
+      "company": "Databricks",
+      "name": "Databricks Startup Program",
+      "track": "startup",
+      "category": "Data",
+      "value_usd": null,
+      "value_label": "Combined Databricks and Neon credits for qualifying startups",
+      "url": "https://www.databricks.com/product/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Qualification review required",
+        "Read the distinct self-funded and funded tracks"
+      ],
+      "source_quote": "up to $200K in credits for Databricks and Neon.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.databricks.com/product/startups",
+        "source_sha256": "57e6afb24ab5ae2f8f0594399b8791c8da625741c80b6bc1a030b94c42efa456",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "microsoft-founders-hub",
+      "company": "Microsoft",
+      "name": "Microsoft for Startups",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "Cloud credits and developer benefits for selected startups",
+      "url": "https://startups.microsoft.com",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Startup application required",
+        "Award determined by the program"
+      ],
+      "source_quote": "up to USD$150,000 in credits",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://startups.microsoft.com",
+        "source_sha256": "c1bc4245eb81d0563e6a025ec783602611753bec8131a4b45ca9a1e9bdc0b382",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "posthog-startups",
+      "company": "PostHog",
+      "name": "PostHog for Startups",
+      "track": "startup",
+      "category": "Analytics",
+      "value_usd": null,
+      "value_label": "Analytics credits with AI-tool exclusions for qualifying startups",
+      "url": "https://posthog.com/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Company under two years old",
+        "Less than five million raised",
+        "Company email domain",
+        "Paid usage plan needed for application"
+      ],
+      "source_quote": "Get $50,000 in PostHog credits",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://posthog.com/startups",
+        "source_sha256": "75230b9376815cb37435760ec6f2021081340958bdb39180e389f78c817ec5e5",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "anthropic-startups",
+      "company": "Anthropic",
+      "name": "Claude for Startups",
+      "track": "startup",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Startup offers and events. Current cohort closed.",
+      "url": "https://claude.com/programs/startups",
+      "status": "closed",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Early-stage founder program",
+        "Current cohort full"
+      ],
+      "source_quote": "not accepting new applications right now.",
+      "notes": "Provider states applications are currently closed.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://claude.com/programs/startups",
+        "source_sha256": "a316cc9b296688a044e735a3e3c4032fd58ee239e22d0ebe88d030e36471fde3",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "nvidia-inception",
+      "company": "NVIDIA",
+      "name": "NVIDIA Inception",
+      "track": "startup",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Free startup membership with partner benefits",
+      "url": "https://www.nvidia.com/en-us/startups/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Incorporated company",
+        "Product and company details kept current",
+        "Partner credits have separate conditions"
+      ],
+      "source_quote": "Inception is free.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.nvidia.com/en-us/startups/",
+        "source_sha256": "da66ff9a5d3afa659846de22bd66b9a275ac3b159ec6a9b52c3ea464ed76a0d6",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "mongodb-startups",
+      "company": "MongoDB",
+      "name": "MongoDB for Startups",
+      "track": "startup",
+      "category": "Database",
+      "value_usd": null,
+      "value_label": "Atlas credits and Voyage AI tokens for selected startups",
+      "url": "https://www.mongodb.com/solutions/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Under seven years old and Series A or earlier",
+        "Single scalable software product",
+        "Agencies excluded",
+        "No previous program acceptance"
+      ],
+      "source_quote": "Atlas credits and Voyage AI tokens",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.mongodb.com/solutions/startups",
+        "source_sha256": "ac468840ded475feefbd583281d2885671d3ff9f9d06589db28cb610b025cbaa",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "intercom-early-stage",
+      "company": "Intercom",
+      "name": "Intercom Early Stage",
+      "track": "startup",
+      "category": "Communication",
+      "value_usd": null,
+      "value_label": "Startup pricing discount with included Fin usage",
+      "url": "https://www.intercom.com/early-stage",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Funding eligibility applies",
+        "Paid subscription rather than a cash or cloud credit grant"
+      ],
+      "source_quote": "Get 93% off Intercom",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.intercom.com/early-stage",
+        "source_sha256": "745761f35c8aed888246432da37619d81d9a96cf4f3a2720fb5820850f339833",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "hubspot-startups",
+      "company": "HubSpot",
+      "name": "HubSpot for Startups",
+      "track": "startup",
+      "category": "Sales & Marketing",
+      "value_usd": null,
+      "value_label": "Discounts on eligible new Professional or Enterprise products",
+      "url": "https://www.hubspot.com/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Partner affiliation or verifiable funding for higher tiers",
+        "Annual commitment required for program pricing"
+      ],
+      "source_quote": "net-new Professional or Enterprise level products only.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.hubspot.com/startups",
+        "source_sha256": "42d5fa67817a2617c72f191e4d93e598d4ad7e54c6517cd99001f9b4f6610f7c",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "notion-startups",
+      "company": "Notion",
+      "name": "Notion for Startups",
+      "track": "startup",
+      "category": "Productivity",
+      "value_usd": null,
+      "value_label": "Free one, three or six month offers based on verified startup status",
+      "url": "https://www.notion.com/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Non-paying customer",
+        "Company domain email",
+        "No previous promotion",
+        "Small companies and incomplete verification may receive the one-month offer"
+      ],
+      "source_quote": "1 month free with Notion AI included",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.notion.com/startups",
+        "source_sha256": "62044dcc31dfdd73d5bc18f51cd06ac9b4f8e55c5f656146b3bad773da31a0cf",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "modal-startups",
+      "company": "Modal",
+      "name": "Modal for Startups",
+      "track": "startup",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "One-time GPU credits for eligible new customers",
+      "url": "https://modal.com/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "New Modal customer",
+        "Funding criteria apply",
+        "No repeat grant at the same tier"
+      ],
+      "source_quote": "Credits are a one-time grant",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://modal.com/startups",
+        "source_sha256": "27176cdff0ea81f3cc4a720dcb566c25f7bcaa2e5381782c7b53af9ee7a6b2a7",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "fireworks-startups",
+      "company": "Fireworks AI",
+      "name": "Fireworks AI Startup Program",
+      "track": "startup",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Inference credits for qualifying venture-backed startups",
+      "url": "https://fireworks.ai/startups",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Company founded within five years",
+        "More than five hundred thousand raised",
+        "Not Series D or later"
+      ],
+      "source_quote": "Venture backed startups with >$500k in funding",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://fireworks.ai/startups",
+        "source_sha256": "12768619e288c5602bad3c4f87d07ec1cf92bd1b258c9134e7ef91f69ace6a73",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "alibaba-ai-catalyst",
+      "company": "Alibaba Cloud",
+      "name": "Alibaba Cloud AI Catalyst Program",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "AI Catalyst cloud credits and Model Studio tokens",
+      "url": "https://www.alibabacloud.com/en/startup/ai",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Application required",
+        "Selection and amount determined by the provider"
+      ],
+      "source_quote": "Up to 2B free Model Studio tokens.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.alibabacloud.com/en/startup/ai",
+        "source_sha256": "8b84a8d1679ec6a025a54945890c8f7399b81bd76d563183c4ff5d8effff3f49",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "e2e-startup-program",
+      "company": "E2E Networks",
+      "name": "E2E Startup Program (AI Explorer tier)",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "AI Explorer credits with distinct higher discount tiers",
+      "url": "https://www.e2enetworks.com/startup-program",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Bootstrapped or early-stage AI-first product",
+        "Ten or fewer employees",
+        "Founded within five years",
+        "Legally incorporated company"
+      ],
+      "source_quote": "AI Explorer",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.e2enetworks.com/startup-program",
+        "source_sha256": "395b8f3d37a176e3925ee5c237601726751e3bcf6a4fd25670e3803d44a8ae82",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "nebius-startups",
+      "company": "Nebius",
+      "name": "Nebius for Startups (via NVIDIA Inception)",
+      "track": "startup",
+      "category": "Cloud",
+      "value_usd": null,
+      "value_label": "Introductory credits for selected AI-native startups",
+      "url": "https://nebius.com/nebius-nvidia-inception-credit-offering",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "AI-native company",
+        "At least five million raised",
+        "Company email required",
+        "Acceptance is not guaranteed"
+      ],
+      "source_quote": "All applications are manually reviewed",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://nebius.com/nebius-nvidia-inception-credit-offering",
+        "source_sha256": "a895d2b40993617cfa72d7bafda034d5396d67d4da7f92301f335c65b0a11b94",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "elevenlabs-grants",
+      "company": "ElevenLabs",
+      "name": "ElevenLabs Grants",
+      "track": "startup",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Thirty-three million text characters over twelve months for selected voice startups",
+      "url": "https://elevenlabs.io/grants",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Long-term monetized product",
+        "Valid business email",
+        "Under twenty-five employees",
+        "No agencies",
+        "No previous company or affiliate grant",
+        "Projects for children eighteen or under excluded"
+      ],
+      "source_quote": "33M text characters",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://elevenlabs.io/grants",
+        "source_sha256": "56f94d6f260fe68f5d7abe28ff83f5683b3a8461dc95ba6f618d1eb7b00e45af",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "openai-codex-oss",
+      "company": "OpenAI",
+      "name": "Codex for Open Source",
+      "track": "oss",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Six months Pro and discretionary API credits for eligible maintainers",
+      "url": "https://openai.com/form/codex-for-oss/",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Public repository",
+        "Primary or core maintainer",
+        "Usage or ecosystem importance",
+        "Eligible open source maintenance use"
+      ],
+      "source_quote": "6 months of ChatGPT Pro, which includes Codex",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://openai.com/form/codex-for-oss/",
+        "source_sha256": "7fd2caa6d64af7c5d631693add6501d8c82094af3dba799a8d7975a46cffafa2",
+        "method": "official_web_reader",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "together-startups",
+      "company": "Together AI",
+      "name": "Together AI Startup Program",
+      "track": "startup",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Tiered platform credits for selected AI startups",
+      "url": "https://www.together.ai/startup-accelerator",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Build tier for up to five million raised",
+        "Higher funding bands have separate tiers",
+        "Reserved GPU Clusters excluded"
+      ],
+      "source_quote": "A targeted selection-based program for startups.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://www.together.ai/startup-accelerator",
+        "source_sha256": "069e561e0e55e9574f5b29fabd4cf8aa031d35fff4be79f21ef90275d75e6f49",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    },
+    {
+      "id": "github-copilot-maintainer",
+      "company": "GitHub",
+      "name": "Copilot Pro for Maintainers",
+      "track": "oss",
+      "category": "AI & ML",
+      "value_usd": null,
+      "value_label": "Free Copilot Pro for eligible open source maintainers",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers",
+      "status": "open",
+      "source": "official",
+      "last_checked": "2026-10-15",
+      "requirements": [
+        "Popular open source repository maintainer",
+        "Eligibility reevaluated monthly"
+      ],
+      "source_quote": "As a maintainer of a popular open-source repository.",
+      "notes": "Selection and final terms remain with the provider.",
+      "verification": {
+        "reviewed_by": "Codex",
+        "checked_at": "2026-10-15",
+        "official_url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers",
+        "source_sha256": "b6e62ad4432df8855eb996445c43e741ee99feb6a4ba269c5b43451984cee4f6",
+        "method": "official_page_read",
+        "claim_scope": [
+          "identity",
+          "benefit",
+          "listed_criteria",
+          "application_status"
+        ],
+        "complete_eligibility": false
+      },
+      "eligibility_mode": "criteria_review",
+      "geography": "Consult provider terms"
+    }
   ]
 }

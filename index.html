@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Startup Credits — free credits you actually qualify for</title>
+<title>Startup Credits: credit programs with evidence</title>
 <meta name="description" content="An open, freshness-checked directory of free cloud, AI and developer-tool credits for open source maintainers and startup founders. Every entry dated. Dead programmes flagged.">
-<meta property="og:title" content="Startup Credits — free credits you actually qualify for">
-<meta property="og:description" content="73 verified credit programmes for OSS maintainers and startup founders. Every entry dated. Dead programmes flagged, not hidden.">
+<meta property="og:title" content="Startup Credits: credit programs with evidence">
+<meta property="og:description" content="Official-source credit and benefit programs. Reviewed dates and provider criteria.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://startupcredits.online/">
 <meta property="og:image" content="https://startupcredits.online/og.png">
@@ -14,7 +14,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Startup Credits — $22,000 is what a bootstrapped founder realistically gets, against the $956,000 other directories advertise.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Startup Credits — free credits you actually qualify for">
+<meta name="twitter:title" content="Startup Credits: credit programs with evidence">
 <meta name="twitter:description" content="80 credit programmes for founders and open source maintainers. Every entry dated, every figure sourced, dead programmes flagged rather than quietly left up.">
 <meta name="twitter:image" content="https://startupcredits.online/og.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
@@ -336,32 +336,32 @@
     </nav>
 
     <div class="hero">
-      <h1>Free credits you actually qualify for</h1>
-      <p class="sub">Big tech companies give away <b>credits</b> — a balance that pays your bills for servers, databases and AI until it runs out. Every directory quotes the biggest number on the page. We checked what a founder with no investor actually gets.</p>
+      <h1>Credit programs with evidence</h1>
+      <p class="sub">Browse offers checked against official provider pages. See the benefit, key conditions and actual review date before deciding where to apply.</p>
 
       <!-- The whole argument for this site, before anyone scrolls or clicks. -->
       <div class="compare">
         <div class="cmp cmp-lie">
-          <div class="cmp-label">Advertised maximum</div>
-          <div class="cmp-num">$1.3M</div>
-          <p class="cmp-note">The top tier. Needs an introduction from a venture capital firm.</p>
+          <div class="cmp-label">Published offers</div>
+          <div class="cmp-num">Official sources</div>
+          <p class="cmp-note">Every listed benefit links to the provider's page.</p>
         </div>
         <div class="cmp cmp-real">
-          <div class="cmp-label">What you can claim today</div>
-          <div class="cmp-num">$24,000</div>
-          <p class="cmp-note">No investor. No introduction. Five programmes publish this openly.</p>
+          <div class="cmp-label">Your next step</div>
+          <div class="cmp-num">Review fit</div>
+          <p class="cmp-note">Provider criteria and selection determine the final award.</p>
         </div>
       </div>
 
       <p class="stats">
         <span><b id="s-count">—</b> programmes</span>
         <span><b id="s-official">—</b> verified on the company's own page</span>
-        <span><b id="s-noref">—</b> need no referral</span>
-        <span><b id="s-dead">—</b> confirmed dead, still listed elsewhere</span>
+        <span><b id="s-noref">-</b> accepting applications</span>
+        <span><b id="s-dead">-</b> applications closed</span>
       </p>
 
       <div class="cta-row">
-        <button class="btn btn-primary" id="open-checker">Find out what you qualify for</button>
+        <button class="btn btn-primary" id="open-checker">Find programs to review</button>
         <a class="btn btn-ghost" href="#browse">Browse all</a>
       </div>
     </div>
@@ -471,8 +471,8 @@
 
       <div class="checker-result" id="checker-result">
         <div class="rstats">
-          <div class="rstat"><b id="r-count">0</b><span id="r-count-label">Programmes you likely qualify for</span></div>
-          <div class="rstat"><b id="r-entry">$0</b><span id="r-entry-label">Realistic today, no referral</span></div>
+          <div class="rstat"><b id="r-count">0</b><span id="r-count-label">Programs to review</span></div>
+          <div class="rstat"><b id="r-entry">$0</b><span id="r-entry-label">Award status</span></div>
           <div class="rstat dimmed"><b id="r-head">$0</b><span>Headline max, referral and all</span></div>
         </div>
         <p class="localnote" id="localnote"></p>
@@ -487,7 +487,7 @@
           </form>
           <p class="su-msg" id="su-msg" role="status"></p>
         </div>
-        <p class="disclaim">Other directories quote you the headline number. That figure is almost always the top tier, gated behind a VC or accelerator introduction. The middle number only counts tiers a company has actually published as self-serve — for the rest we count zero rather than guess. It's a guide from published criteria, not a guarantee. Your matches are highlighted below.</p>
+        <p class="disclaim">This precheck lists programs to review. Read the linked provider criteria before applying. An award and its amount require provider approval.</p>
       </div>
     </div>
   </div>
@@ -507,8 +507,8 @@
       </div>
       <div class="seg" data-q="filter">
         <button data-v="all" aria-pressed="true">Any</button>
-        <button data-v="noref">No referral</button>
-        <button data-v="easy">Easy apply</button>
+        <button data-v="noref">Open calls</button>
+        <button data-v="easy">Closed calls</button>
       </div>
       <div class="seg seg-ai" data-q="focus" title="AI credits are what most founders are hunting for, so they lead by default">
         <button data-v="all" aria-pressed="true">Everything</button>
@@ -526,7 +526,7 @@
 <div class="wrap">
   <div class="meta-row">
     <span class="count" id="count">loading…</span>
-    <span class="count" id="sortnote">sorted by listed value</span>
+    <span class="count" id="sortnote">AI-related programs first</span>
   </div>
   <div class="grid" id="grid"></div>
 </div>
@@ -576,6 +576,7 @@
   // "Worldwide" shows only programmes open to everyone. Picking a country ADDS that
   // country's local schemes on top - it never hides the global ones.
   function inCountry(p){
+    if (!p.country) return true;
     return state.country === "all" ? p.country === "GLOBAL"
                                    : (p.country === "GLOBAL" || p.country === state.country);
   }
@@ -686,18 +687,18 @@
 
     var ids = {}, entry = 0, headline = 0, n = 0, local = 0;
     DATA.forEach(function(p){
-      if(p.status === "ended") return;
+      if(p.status !== "open") return;
       if(!inCountry(p)) return;
       if(p.track === "oss" && !wantOss) return;
       if(p.track === "startup" && !wantStartup) return;
       var rule = RULES[p.id];
-      var ok = rule ? rule(answers) : true;
+      var ok = p.eligibility_mode === "criteria_review";
       if(ok){
         ids[p.id] = true; n++; entry += entryValue(p); headline += headlineValue(p);
         // Local schemes are quoted in their own currency, so they add nothing to the
         // dollar totals. Count them separately rather than letting them vanish —
         // an Indian grant of Rs 1 crore is worth far more than every dollar credit here.
-        if(p.country !== "GLOBAL") local++;
+        if(p.country && p.country !== "GLOBAL") local++;
       }
     });
     return { ids: ids, count: n, entry: entry, headline: headline, local: local };
@@ -741,9 +742,9 @@
       ? '<span class="badge b-ended">Discontinued</span>'
       : (p.status === "closed" ? '<span class="badge b-closed">Call closed</span>'
       : (p.status === "unverified" ? '<span class="badge b-unver">Unverified</span>'
-      : (isMatch ? '<span class="badge b-open">You qualify</span>' : "")));
+      : (isMatch ? '<span class="badge b-open">Review criteria</span>' : "")));
 
-    var reqs = (p.requirements || []).slice(0,4).map(function(r){
+    var reqs = (p.requirements || []).map(function(r){
       return "<li>" + esc(r) + "</li>"; }).join("");
 
     // Category lives in the filters at the top; repeating it on all 80 cards is noise.
@@ -763,8 +764,8 @@
                : (p.track === "oss" && p.value_usd ? money(p.value_usd) : null);
       var ad   = p.value_usd ? money(p.value_usd) : null;
       var left = real
-        ? '<span class="amt-real">' + real + '<small>no investor needed</small></span>'
-        : '<span class="amt-real" style="font-size:14px;font-weight:500">Not published<small>amount not stated</small></span>';
+        ? '<span class="amt-real">' + real + '<small>entry tier ceiling</small></span>'
+        : '<span class="amt-real" style="font-size:14px;font-weight:500">See official offer<small>review provider terms</small></span>';
       var right = (ad && ad !== real)
         ? '<span class="amt-ad"><s>' + ad + '</s><small>advertised</small></span>' : "";
       amounts = '<div class="amounts">' + left + right + "</div>";
@@ -787,7 +788,7 @@
       // native <details>. Scanning 80 cards should surface numbers, not essays —
       // but nothing is deleted, it is one click away. No JavaScript needed.
       ((reqs || p.source_quote || p.notes)
-        ? '<details class="more"><summary>Requirements &amp; terms</summary>' +
+        ? '<details class="more"><summary>Key criteria &amp; terms</summary>' +
           (reqs ? '<ul class="reqs">' + reqs + '</ul>' : "") +
           (p.source_quote ? '<blockquote class="quote">“' + esc(p.source_quote) + '”' +
             '<cite>' + esc(p.company) + ', their own page</cite></blockquote>' : "") +
@@ -797,7 +798,7 @@
       '<div class="card-foot">' +
       '<div class="tags">' + srcTag + tags.map(function(t){ return '<span class="tag">' + t + "</span>"; }).join("") + "</div>" +
       (p.status === "ended" ? '<span class="apply dead">Do not apply</span>'
-        : '<a class="apply" href="' + esc(p.url) + '" target="_blank" rel="noopener">Apply →</a>') +
+        : '<a class="apply" href="' + esc(p.url) + '" target="_blank" rel="noopener">View official page</a>') +
       "</div>" +
       '<div class="checked">verified ' + esc(p.last_checked) + "</div>" +
       "</article>";
@@ -810,8 +811,8 @@
       if(state.focus === "ai" && !isAI(p)) return false;
       if(state.track !== "all" && p.track !== state.track) return false;
       if(state.cat && p.category !== state.cat) return false;
-      if(state.filter === "noref" && p.referral_required) return false;
-      if(state.filter === "easy" && p.difficulty !== "easy") return false;
+      if(state.filter === "noref" && p.status !== "open") return false;
+      if(state.filter === "easy" && p.status !== "closed") return false;
       if(q){
         var hay = (p.company + " " + p.name + " " + p.category + " " + p.value_label + " " +
                    (p.requirements || []).join(" ") + " " + (p.notes || "")).toLowerCase();
@@ -860,8 +861,8 @@
     document.getElementById("s-count").textContent = DATA.length;
     document.getElementById("s-official").textContent =
       DATA.filter(function(p){ return p.source === "official"; }).length;
-    document.getElementById("s-noref").textContent = open.filter(function(p){ return !p.referral_required; }).length;
-    document.getElementById("s-dead").textContent = DATA.filter(function(p){ return p.status === "ended"; }).length;
+    document.getElementById("s-noref").textContent = DATA.filter(function(p){ return p.status === "open"; }).length;
+    document.getElementById("s-dead").textContent = DATA.filter(function(p){ return p.status === "closed"; }).length;
   }
 
   /* -------- wiring -------- */
@@ -930,18 +931,18 @@
         // A founder with just an idea hasn't qualified for anything yet — saying
         // "you qualify" would be a lie. Frame it as what the five steps unlock.
         document.getElementById("r-count-label").textContent =
-          preStart ? "Programmes those 5 steps unlock" : "Programmes you likely qualify for";
+          "Programs whose criteria need review";
         document.getElementById("r-entry-label").textContent =
-          preStart ? "Realistic then, no investor" : "Realistic today, no referral";
+          "Award status";
         document.getElementById("r-count").textContent = state.matches.count;
-        document.getElementById("r-entry").textContent = money(state.matches.entry);
-        document.getElementById("r-head").textContent  = money(state.matches.headline);
+        document.getElementById("r-entry").textContent = "Provider review";
+        document.getElementById("r-head").textContent  = "See official terms";
         // Tie the ask to what they just saw — a number they recognise beats "subscribe".
         var su = document.getElementById("signup");
         if(su && !su.classList.contains("done")){
           document.getElementById("su-head").textContent = preStart
             ? "Shall we tell you when a programme you could reach opens up?"
-            : "You qualify for " + state.matches.count + ". We'll tell you when that changes.";
+            : "Review criteria for " + state.matches.count + ". We'll tell you when that changes.";
         }
         var ln = document.getElementById("localnote");
         ln.textContent = state.matches.local
@@ -949,11 +950,7 @@
             + "Several are cash grants you never repay and give up no equity for — worth far more than any credit on this page. Look for the green Government cards below."
           : "";
         ln.style.display = state.matches.local ? "" : "none";
-        document.getElementById("r-outro").textContent = preStart
-          ? "Do those five things and " + state.matches.count + " programmes on this page open up, worth about "
-            + money(state.matches.entry) + " you can claim without ever talking to an investor. "
-            + "Most founders can finish the whole list in a weekend for around $10."
-          : "";
+        document.getElementById("r-outro").textContent = "Review each provider's current criteria. No award amount is guaranteed by this precheck.";
       } else {
         res.classList.remove("on");
       }
@@ -1020,7 +1017,7 @@
   fetch("data/programs.json", { cache: "no-store" })
     .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
     .then(function(d){
-      DATA = d.programs;
+      DATA = d.programs.filter(function(p){ return p.source === "official" && p.verification && p.verification.checked_at === p.last_checked && p.status !== "unverified"; });
       document.getElementById("freshness").textContent = "checked " + d.updated;
       buildStats(); buildCats(); syncCheckerVisibility(); render();
     })

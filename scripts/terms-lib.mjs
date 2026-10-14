@@ -92,8 +92,8 @@ export function classifyLabel(label) {
   if (/\b(discontinued|ended|closed|shut down|no longer)\b/.test(t)) return "ended";
   if (/\b(not published|amount not|unpublished|set by your partner)\b/.test(t)) return "unpublished";
   if (numbersIn(label).length) return "amount";
-  if (/%\s*off|\bdiscount\b|\boff year\b/.test(t)) return "discount";
-  if (/\bfree\b|\bunlimited\b|\blifetime\b|\bno pull rate limits\b/.test(t)) return "free-plan";
+  if (/%\s*off|\bdiscounts?\b|\boff year\b/.test(t)) return "discount";
+  if (/\bfree\b|\bunlimited\b|\blifetime\b|\bno pull rate limits\b|\bcomplimentary\b|\bno-cost\b|\bsponsored\b/.test(t)) return "free-plan";
   // Credits offered with no figure attached. Same watch as an explicit
   // "amount not published": the day a number appears, that is news.
   if (/\bcredits?\b|\bgrants?\b|\bsponsorship\b|\bplan\b/.test(t)) return "unpublished";
