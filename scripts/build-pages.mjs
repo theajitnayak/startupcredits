@@ -16,7 +16,10 @@
  * Output: p/<id>.html, sitemap.xml, robots.txt
  */
 
-import { readFile, writeFile, mkdir, rm } from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir, unlink, realpath } from "node:fs/promises";
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import { validateCatalog } from './catalog-policy.mjs';
 
 const ROOT = new URL("../", import.meta.url);
 const SITE = "https://startupcredits.online";
@@ -24,6 +27,8 @@ const SITE = "https://startupcredits.online";
 const { programs, updated } = JSON.parse(
   await readFile(new URL("data/programs.json", ROOT), "utf8")
 );
+const errors=validateCatalog({programs},process.argv[2]??updated);
+if(errors.length)throw Error(errors.join('\n'));
 
 const esc = (s) =>
   String(s ?? "")
@@ -35,7 +40,7 @@ const esc = (s) =>
 /** Search engines truncate around 155 characters, so lead with the number. */
 function metaDescription(p) {
   const amount = p.value_label ? `${p.value_label}. ` : "";
-  const gate = p.referral_required ? "Referral required. " : "No referral needed. ";
+  const gate = "Provider review required. ";
   const first = (p.requirements || [])[0];
   const who = first ? `${first}. ` : "";
   return `${p.company} ${p.name}: ${amount}${gate}${who}Verified ${p.last_checked}.`
@@ -47,7 +52,7 @@ function statusNote(p) {
   if (p.status === "ended")
     return `<p class="note dead"><strong>This programme has closed.</strong> It stays listed, and marked, so you do not spend an afternoon rediscovering that it is gone.</p>`;
   if (p.status === "closed")
-    return `<p class="note warn"><strong>Applications are not open right now.</strong> The programme itself runs in rounds, so the portal is worth watching rather than writing off.</p>`;
+    return `<p class="note warn"><strong>Applications are not open right now.</strong> Check the official page for a future opening.</p>`;
   return "";
 }
 
@@ -95,7 +100,7 @@ footer a{color:var(--muted)}
 `;
 
 function page(p) {
-  const title = `${p.company} ${p.name} — ${p.value_label || "free credits"}`;
+  const title = `${p.company} ${p.name}: ${p.value_label || "provider offer"}`;
   const url = `${SITE}/p/${p.id}.html`;
   const desc = metaDescription(p);
 
@@ -103,15 +108,12 @@ function page(p) {
   // understood by something other than a human reading the page.
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Offer",
+    "@type": "WebPage",
     name: `${p.company} ${p.name}`,
     description: desc,
-    url: p.url,
-    seller: { "@type": "Organization", name: p.company },
-    category: p.category,
-    availability:
-      p.status === "ended" ? "https://schema.org/Discontinued" : "https://schema.org/InStock",
-    ...(p.value_usd ? { price: p.value_usd, priceCurrency: "USD" } : {}),
+    url,
+    about: { "@type": "Organization", name: p.company },
+    citation: p.url,
   };
 
   return `<!DOCTYPE html>
@@ -143,8 +145,7 @@ function page(p) {
   <p class="amount">${esc(p.value_label || "Amount not published")}</p>
 
   <div class="tags">
-    <span class="tag${p.referral_required ? "" : " ok"}">${p.referral_required ? "Referral required" : "No referral needed"}</span>
-    <span class="tag">${esc(p.difficulty)} to get</span>
+    <span class="tag">Provider review required</span>
     <span class="tag">${esc(p.category)}</span>
     ${p.recurring ? '<span class="tag">Renews</span>' : ""}
     ${p.country === "IN" ? '<span class="tag">India</span>' : ""}
@@ -153,7 +154,7 @@ function page(p) {
   ${statusNote(p)}
 
   <div class="card">
-    <h2>Who qualifies</h2>
+    <h2>Key provider criteria</h2>
     <ul>${(p.requirements || []).map((r) => `<li>${esc(r)}</li>`).join("")}</ul>
   </div>
 
@@ -161,19 +162,19 @@ function page(p) {
     p.source_quote
       ? `<div class="card"><h2>In their own words</h2>
     <blockquote>${esc(p.source_quote)}
-    <span class="src">— ${esc(p.company)}, read ${esc(p.last_checked)}</span></blockquote></div>`
+    <span class="src">${esc(p.company)}, read ${esc(p.last_checked)}</span></blockquote></div>`
       : ""
   }
 
   ${p.notes ? `<div class="card"><h2>What to know</h2><p style="margin:0">${esc(p.notes)}</p></div>` : ""}
 
-  <p><a class="cta" href="${esc(p.url)}" rel="noopener">Apply at ${esc(p.company)} &rarr;</a></p>
-  <p class="after">Goes to ${esc(p.company)}'s own page. We last read it on ${esc(p.last_checked)} and check it again every morning.</p>
+  <p><a class="cta" href="${esc(p.url)}" rel="noopener">Read the official page</a></p>
+  <p class="after">Source reviewed ${esc(p.last_checked)}. Full eligibility and any award require provider approval.</p>
 </div></main>
 <footer><div class="wrap">
   <a href="/">All ${programs.length} programmes</a> &middot;
   <a href="https://github.com/theajitnayak/startupcredits">Source and data</a> &middot;
-  Checked daily, corrections in public.
+  Dated source review. Corrections welcome.
 </div></footer>
 </body>
 </html>`;
@@ -181,8 +182,14 @@ function page(p) {
 
 // Rebuild from scratch so a renamed or deleted programme cannot leave an orphan
 // page behind, still indexed and quietly wrong.
-await rm(new URL("p/", ROOT), { recursive: true, force: true });
 await mkdir(new URL("p/", ROOT), { recursive: true });
+const repoRoot=await realpath(fileURLToPath(ROOT));
+const pagesRoot=await realpath(fileURLToPath(new URL('p/',ROOT)));
+if(path.relative(repoRoot,pagesRoot)!=='p')throw Error('Page directory is outside the repository.');
+for(const entry of await readdir(pagesRoot,{withFileTypes:true})){
+ if(!entry.isFile()||!/^[-a-z0-9]+\.html$/.test(entry.name))throw Error('Unexpected page artifact: '+entry.name);
+ await unlink(path.join(pagesRoot,entry.name));
+}
 
 for (const p of programs) {
   await writeFile(new URL(`p/${p.id}.html`, ROOT), page(p), "utf8");
