@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Data and checks behind startupcredits.online",
   "scripts": {
-    "test": "node --test scripts/terms-lib.test.mjs",
+    "test": "node --test scripts/terms-lib.test.mjs scripts/catalog-policy.test.mjs",
+    "check:catalog": "node scripts/check-catalog.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:terms": "node scripts/check-terms.mjs",
     "install:browser": "playwright install chromium"

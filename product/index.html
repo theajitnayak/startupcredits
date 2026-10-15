@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Application checklist</title>
+<style>body{font:16px/1.5 Arial,sans-serif;color:#182539;background:#f7f8fa;margin:0}main{max-width:760px;margin:40px auto;padding:24px;background:white;border:1px solid #dde3ea;border-radius:12px}h1{font-size:28px}label{display:block;margin:18px 0 5px;font-weight:bold}select,input,button{font:inherit;padding:10px;border:1px solid #a7b3c2;border-radius:5px}select{width:100%}input{max-width:95%}button{background:#173968;color:white;cursor:pointer}p.hint{font-size:14px;color:#4b5c72}#result{margin-top:24px;padding:20px;background:#edf2f8;border-radius:8px}li{margin:7px 0}a{color:#17498a}button:disabled{opacity:.5}select:focus,input:focus,button:focus{outline:3px solid #a6c8f0;outline-offset:2px}.question{padding-bottom:8px;border-bottom:1px solid #edf0f4}</style></head>
+<body><main><h1>What do I need before applying?</h1><p>Choose a program. Check your actual facts and download a checklist with its official source.</p><p class="hint">Your answers stay in this page. Nothing is submitted to a provider. Passing these checks does not guarantee approval.</p>
+<label for="program">Program</label><select id="program" disabled><option>Loading reviewed programs</option></select>
+<div id="questions"></div><section id="result" aria-live="polite" hidden></section>
+<p><button id="download" disabled>Download my checklist</button></p><p class="hint">This prototype includes explicit partial checks for eight programs. Other listings provide their reviewed criteria for manual checking.</p></main>
+<script type="module">
+import {assessFit,questionsFor} from './fit-engine.mjs';
+const selector=document.querySelector('#program'),panel=document.querySelector('#questions'),result=document.querySelector('#result'),download=document.querySelector('#download');
+let programs=[],profile={},current=null,check=null;
+function node(tag,text){const n=document.createElement(tag);if(text!=null)n.textContent=text;return n;}
+function update(){
+ check=assessFit(current,profile);result.replaceChildren();result.hidden=false;
+ result.append(node('h2',check.status==='closed'?'Applications closed':check.status==='criteria_not_met'?'A published condition is not met':'Provider review required'));
+ const qs=questionsFor(current),label=k=>qs.find(q=>q.key===k)?.label??k;
+ if(check.missing.length){result.append(node('h3','Facts still needed'));const list=node('ul');for(const key of check.missing)list.append(node('li',label(key)));result.append(list);}
+ if(check.reasons.length){result.append(node('h3','What needs attention'));const list=node('ul');for(const key of check.reasons)list.append(node('li',label(key)));result.append(list);}
+ result.append(node('h3','Key provider conditions'));const list=node('ul');for(const item of current.requirements)list.append(node('li',item));result.append(list);
+ result.append(node('p',check.next_step??'Check the provider page for a future opening.'));
+ const a=node('a','Read the official source');a.href=current.url;a.target='_blank';a.rel='noopener';result.append(a,node('p','Reviewed '+current.last_checked));download.disabled=false;
+}
+function choose(){
+ current=programs.find(p=>p.id===selector.value);profile={};panel.replaceChildren();
+ for(const q of questionsFor(current)){
+  const box=node('div');box.className='question';const label=node('label',q.label),id='fact-'+q.key;label.htmlFor=id;box.append(label);
+  const control=node(q.type==='boolean'?'select':'input');control.id=id;
+  if(q.type==='boolean'){for(const [v,t]of[['unsure','I do not know yet'],['true','Yes'],['false','No']]){const option=node('option',t);option.value=v;control.append(option);}}
+  else{control.type='number';control.min='0';control.step='any';control.placeholder='Leave blank if unknown';}
+  control.addEventListener('input',()=>{profile[q.key]=q.type==='boolean'?(control.value==='unsure'?null:control.value==='true'):(control.value===''?null:Number(control.value));update();});box.append(control);panel.append(box);
+ }
+ update();
+}
+selector.addEventListener('change',choose);
+download.addEventListener('click',()=>{
+ const qs=questionsFor(current),label=k=>qs.find(q=>q.key===k)?.label??k;
+ const text=['# Application checklist: '+current.company,'Program: '+current.name,'Result: '+check.status,'Official source: '+current.url,'Source reviewed: '+current.last_checked,'','## Facts still needed',...check.missing.map(k=>'- '+label(k)),'','## Conditions needing attention',...check.reasons.map(k=>'- '+label(k)),'','## Key provider criteria',...current.requirements.map(x=>'- '+x),'','Next action: '+(check.next_step??'Wait for the provider to reopen applications.'),'','Provider review decides full eligibility and the award.'].join('\n');
+ const url=URL.createObjectURL(new Blob([text],{type:'text/markdown'}));const a=node('a');a.href=url;a.download=current.id+'-checklist.md';a.click();URL.revokeObjectURL(url);
+});
+try{const r=await fetch('../data/programs.json');if(!r.ok)throw Error('Catalog unavailable');const d=await r.json();programs=d.programs.filter(p=>p.source==='official'&&p.verification).sort((a,b)=>a.company.localeCompare(b.company));selector.replaceChildren();for(const p of programs){const option=node('option',p.company+' - '+p.name);option.value=p.id;selector.append(option);}selector.disabled=false;selector.value='gcp-startups';choose();}catch(e){selector.replaceChildren(node('option','Could not load reviewed catalog'));result.hidden=false;result.textContent=e.message;}
+</script></body></html>
